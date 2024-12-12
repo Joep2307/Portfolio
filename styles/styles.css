@@ -1,11 +1,150 @@
 
+/**************/
+/**** Body ****/
+/**************/
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 :root{
     --color-text: #CCd0cf;
-    --color-main-background: #06141b;
-
+    --color-main-background: #03141B;
+    --color-headinds: #00BD8E;
+    --color-footer-background: #00BD8E;
+    --color-footer-text: #0E1D2A;
 }
+
+/*************/
+/** General **/
+/*************/
 
 body{
     background-color: var(--color-main-background);
     color: var(--color-text);
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Fonts */
+
+h1{
+    font-size: 1px;
+    color: transparent;
+    z-index: -10;
+}
+
+h2{
+color: var(--color-headinds);    
+}
+
+h3{
+    font-weight: lighter;
+}
+
+.highlight {
+    color: var(--color-headinds); 
+    font-weight: bold;
+  }
+
+
+
+img{
+    max-width: 40vw;
+}
+
+svg{
+    max-width: 2vw;
+}
+
+ul,ol{
+    list-style: none;
+    
+}
+
+a:link{
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/************/
+/** Header **/
+/************/
+
+
+
+/*************/
+/**** NAV ****/
+/*************/
+
+
+
+nav ol{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/**************/
+/**** Main ****/
+/**************/
+
+
+
+/*************/
+/** Artile **/
+/*************/
+
+article div{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+/*************/
+/** Section **/
+/*************/
+
+div section{
+    width: 40vw;
+
+}
+
+div section img{
+    max-height: 15em;
+}
+
+div section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+div section li{
+    background-color: #2ecc71;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+}
+
+/************/
+/** Footer **/
+/************/
+
+footer{
+    display: flex;
+    background-color: var(--color-footer-background);
+    color: var(--color-footer-text);
+    font-weight: bold;
+}
+
+footer h2{
+    color: var(--color-footer-text);
+}
+
+footer a:link{
+    color: var(--color-footer-text);
+    font-weight: bold;
 }
