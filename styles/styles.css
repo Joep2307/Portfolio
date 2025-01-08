@@ -87,6 +87,12 @@ header {
 /**** NAV ****/
 /*************/
 
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 nav ol {
@@ -94,6 +100,13 @@ nav ol {
     justify-content: space-around;
 }
 
+nav li{
+    padding: 1em;
+}
+
+nav svg{
+    width: 3em;
+}
 
 /**************/
 /**** Main ****/
